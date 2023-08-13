@@ -1,40 +1,33 @@
-name: GitHub Pages
+name: Deploy Blazor WASM to GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  deploy:
+  deploy-to-github-pages:
     runs-on: self-hosted
-
     steps:
-      # Checkout the code
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      # Setup .NET Core
-      - name: Setup .NET Core
+      - name: Setup .NET Core SDK
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 7.0.100-preview.7.21379.14
+          dotnet-version: 7.x
+          include-prerelease: true
 
-      # Install .NET WASM Build Tools
-      - name: Install .NET WASM Build Tools
-        run: dotnet workload install wasm-tools
-
-      # Publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
-        run: dotnet publish BlazorApp/BlazorApp.csproj -c:Release -p:GHPages=true -o dist/BlazorApp --nologo
+        run: dotnet publish BlazorApp/BlazorApp.csproj -c Release -o release --nologo
 
-      # Commit wwwroot to GitHub Pages
+      - name: copy index.html to 404.html
+        run: cp release/wwwroot/index.html release/wwwroot/404.html
+
+      - name: Add .nojekyll file
+        run: touch release/wwwroot/.nojekyll
+
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: dist/BlazorApp/wwwroot
+          FOLDER: release/wwwroot
