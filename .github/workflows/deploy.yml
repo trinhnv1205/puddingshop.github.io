@@ -20,7 +20,6 @@ jobs:
 
       - name: Build Blazor app
         run: dotnet build BlazorApp/BlazorApp.csproj --configuration Release
-
       - name: Publish to GitHub Pages
         run: |
 #          dotnet tool install -g dotnet-ef --version 7.0.0
