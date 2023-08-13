@@ -26,7 +26,7 @@ jobs:
       
       # Publishes Blazor project to the release-folder
 #      - name: Publish .NET Core Project
-#        run: dotnet publish BlazorApp/BlazorApp.csproj -c:Release -p:GHPages=true -o dist/BlazorApp --nologo
+#        run: dotnet publish BlazorApp/BlazorApp.csproj -c:Release -p:master=true -o root --nologo
       
       # Commit wwwroot to GitHub Pages
       - name: Commit wwwroot to GitHub Pages
@@ -34,4 +34,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master
-          FOLDER: dist/BlazorApp/wwwroot
+          FOLDER: root/wwwroot
