@@ -17,20 +17,20 @@ jobs:
           # dotnet-version: 3.1
 
       # - name: Publish .NET Core Project
-        # run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o release --nologo
+        # run: dotnet publish BlazorGitHubPagesDemo.csproj -c Release -o root --nologo
 
       - name: Change base-tag in index.html
-        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorApp\/" \/>/g' release/wwwroot/index.html
+        run: sed -i 's/<base href="\/" \/>/<base href="\/BlazorApp\/" \/>/g' root/wwwroot/index.html
 
       - name: Copy index.html to 404.html
-        run: cp release/wwwroot/index.html release/wwwroot/404.html
+        run: cp root/wwwroot/index.html root/wwwroot/404.html
 
       - name: Add .nojekyll file
-        run: touch release/wwwroot/.nojekyll
+        run: touch root/wwwroot/.nojekyll
 
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: release/wwwroot
+          FOLDER: root/wwwroot
