@@ -21,13 +21,14 @@ jobs:
       # publishes Blazor project to the release-folder
       - name: Restore NuGet Packages
         run: dotnet restore
-      - name: Build .NET Core Project
-        run: dotnet build trinhnv1205.github.io.csproj -c Release --no-restore
+      # - name: Build .NET Core Project
+        # run: dotnet build trinhnv1205.github.io.csproj -c Release --no-restore
       - name: Publish .NET Core Project
-        run: dotnet publish trinhnv1205.github.io.csproj -c Release -o release --nologo
+        # run: dotnet publish trinhnv1205.github.io.csproj -c Release -o root --nologo
+        run: ls -la
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: release/wwwroot
+          FOLDER: root/wwwroot
