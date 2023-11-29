@@ -24,8 +24,10 @@ jobs:
       # - name: Build .NET Core Project
         # run: dotnet build trinhnv1205.github.io.csproj -c Release --no-restore
       - name: Publish .NET Core Project
-        # run: dotnet publish trinhnv1205.github.io.csproj -c Release -o root --nologo
-        run: ls -la
+        run: dotnet publish trinhnv1205.github.io.csproj -c Release -o root --nologo 
+      # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+      - name: Change base-tag in index.html from / to trinhnv1205.github.io
+        run: sed -i 's/<base href="\/" \/>/<base href="\/trinhnv1205.github.io\/" \/>/g' root/wwwroot/index.html
       - name: Commit wwwroot to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
