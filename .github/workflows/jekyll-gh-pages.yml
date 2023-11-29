@@ -19,9 +19,11 @@ jobs:
       with:
         dotnet-version: 3.1
 
+    - name: cd 
+      run: cd BlazorApp
+
     # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: cd BlazorApp
       run: dotnet publish BlazorApp.csproj -c Release -o release --nologo
     
     # changes the base-tag in index.html from '/' to 'BlazorApp' to match GitHub Pages repository subdirectory
