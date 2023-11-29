@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vphNHyugOR8/B1sTNXuCCtu1nPglqJQycCs8sTLb/gcJMVmxikJvH+9X5FOjWEDwV+XRFJoDpI3N1ECPmG6NaA==",
+  "dgSpecHash": "9oL+FJheglOgZdUc5iZupiceuBGbzimkbfFP5+YPTjUjTuRj3hbhEWhOCcIGMho4QJnlO3Sg2E7KV4Aj7jZHIg==",
   "success": true,
-  "projectFilePath": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/BlazorGitHubPagesDemo/BlazorGitHubPagesDemo.csproj",
+  "projectFilePath": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/BlazorApp/BlazorApp.csproj",
   "expectedPackageFiles": [
     "/Users/trinhnv/.nuget/packages/microsoft.aspnetcore.authorization/7.0.5/microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "/Users/trinhnv/.nuget/packages/microsoft.aspnetcore.components/7.0.5/microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
