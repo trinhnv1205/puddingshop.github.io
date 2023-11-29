@@ -24,7 +24,7 @@ jobs:
       # - name: Build .NET Core Project
         # run: dotnet build trinhnv1205.github.io.csproj -c Release --no-restore
       - name: Publish .NET Core Project
-        run: dotnet publish trinhnv1205.github.io.csproj -c Release -o root --nologo 
+        run: dotnet publish ./trinhnv1205.github.io/trinhnv1205.github.io.csproj -c Release -o root --nologo # /home/runner/work/trinhnv1205.github.io/trinhnv1205.github.io/trinhnv1205.github.io.csproj : error MSB4236: The SDK 'Microsoft.NET.Sdk.BlazorWebAssembly' specified could not be found.
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to trinhnv1205.github.io
         run: sed -i 's/<base href="\/" \/>/<base href="\/trinhnv1205.github.io\/" \/>/g' root/wwwroot/index.html
@@ -34,3 +34,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: root/wwwroot
+      # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
+      - name: Add .nojekyll file
+        run: touch root/wwwroot/.nojekyll
