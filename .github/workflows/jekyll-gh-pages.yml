@@ -18,14 +18,7 @@ jobs:
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 3.1
-      # runs dotnet restore to restore dependencies
-      - name: dotnet restore
-        run: dotnet restore
-      # runs dotnet build to build the project
-      - name: dotnet build
-        run: dotnet build --configuration Release --no-restore
-      # runs dotnet publish to publish the project
-         # publishes Blazor project to the release-folder
+      # publishes Blazor project to the release-folder
       - name: Publish .NET Core Project
         run: dotnet publish trinhnv1205.github.io.csproj -c Release -o release --nologo
       - name: Commit wwwroot to GitHub Pages
