@@ -826,3 +826,6 @@
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net7.0/refint/BlazorApp.dll
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net7.0/BlazorApp.pdb
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net7.0/ref/BlazorApp.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net7.0/release/web.config
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net7.0/release/wwwroot/sample-data/weather.json
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net7.0/release/wwwroot/_framework/blazor.boot.json

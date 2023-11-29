@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/BlazorApp.styles.css"
     },
     {
+      "Id": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/404.html",
+      "PackagePath": "staticwebassets/404.html"
+    },
+    {
       "Id": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
     },

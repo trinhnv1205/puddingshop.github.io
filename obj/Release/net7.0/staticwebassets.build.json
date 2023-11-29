@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QVgklQ1EFRT7L/chfRlxjLEeIi/U4RnErBmpn46eaK8=",
+  "Hash": "U842RFN50gGN7YBfbN62EZzIQhDs8U4PP2oMtWqfPpU=",
   "Source": "BlazorApp",
   "BasePath": "/",
   "Mode": "Root",
@@ -6900,6 +6900,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net7.0/scopedcss/projectbundle/BlazorApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/404.html",
+      "SourceId": "BlazorApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "404.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/404.html"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/css/app.css",
