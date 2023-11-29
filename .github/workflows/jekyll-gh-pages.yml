@@ -24,7 +24,7 @@ jobs:
       # - name: Build .NET Core Project
         # run: dotnet build trinhnv1205.github.io.csproj -c Release --no-restore
       - name: Publish .NET Core Project
-        run: dotnet publish ./trinhnv1205.github.io/trinhnv1205.github.io.csproj -c Release -o root --nologo # /home/runner/work/trinhnv1205.github.io/trinhnv1205.github.io/trinhnv1205.github.io.csproj : error MSB4236: The SDK 'Microsoft.NET.Sdk.BlazorWebAssembly' specified could not be found.
+        run: dotnet publish trinhnv1205.github.io.csproj -c Release -o root --nologo # /home/runner/work/trinhnv1205.github.io/trinhnv1205.github.io/trinhnv1205.github.io.csproj : error MSB4236: The SDK 'Microsoft.NET.Sdk.BlazorWebAssembly' specified could not be found.
       # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
       - name: Change base-tag in index.html from / to trinhnv1205.github.io
         run: sed -i 's/<base href="\/" \/>/<base href="\/trinhnv1205.github.io\/" \/>/g' root/wwwroot/index.html
