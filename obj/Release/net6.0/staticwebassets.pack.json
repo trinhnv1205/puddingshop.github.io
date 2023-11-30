@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets/service-worker.js"
     },
     {
+      "Id": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/404.html",
+      "PackagePath": "staticwebassets/404.html"
+    },
+    {
       "Id": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

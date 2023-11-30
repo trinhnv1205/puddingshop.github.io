@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kehtV5DcxehAzekaCecX6mqqnA0nJ8HnXS3PH8K0YSU=",
+  "Hash": "OohWndXT0Nc/UQJ8URws5J/BRNYsY8oPxu+iYvaKDRI=",
   "Source": "mudblazorapp",
   "BasePath": "/",
   "Mode": "Root",
@@ -2905,6 +2905,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/service-worker.published.js"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/404.html",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "404.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/404.html"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/favicon.ico",
