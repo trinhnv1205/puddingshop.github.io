@@ -12,7 +12,7 @@
 else
 {
     <MudTable Items="users">
-        <HeaderContent Context="context">
+        <HeaderContent>
             <MudTh>Id</MudTh>
             <MudTh>Username</MudTh>
             <MudTh>Name</MudTh>
@@ -20,7 +20,7 @@ else
             <MudTh>Email</MudTh>
             <MudTh>Role</MudTh>
         </HeaderContent>
-        <RowTemplate Context="context">
+        <RowTemplate>
             <MudTd DataLabel="Id">@context.Id</MudTd>
             <MudTd DataLabel="Username">@context.Username</MudTd>
             <MudTd DataLabel="First Name">@context.Name</MudTd>

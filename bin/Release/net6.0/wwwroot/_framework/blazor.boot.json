@@ -197,13 +197,13 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "mudblazorapp.dll": "sha256-\/6pkPMy8LMIgl8WWflI7keQVTPmk8yljtL1MmaKakBw="
+      "mudblazorapp.dll": "sha256-LaLXT6p\/xKGDUek98WAVKQLxLpqdT0BdndVsRA\/d2aY="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "mudblazorapp.pdb": "sha256-GPJQ94nZJONejCz17+8wl5MkTYitJshJjyyD+8m6fsE="
+      "mudblazorapp.pdb": "sha256-xR3aI2rPbfcoPo+XwBpQwrrd9nWIxwRsVMdRonOCKXo="
     },
     "runtime": {
       "dotnet.6.0.16.yecg89qb1a.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",
