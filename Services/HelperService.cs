@@ -26,8 +26,11 @@ public class HelperService : IHelperService
     {
         _logger.LogInformation($"LoadDataFromJsonFile<{typeof(T)}>() called");
         
-        // load data from json file in ./wwwroot/sample-data
-        var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "sample-data", fileName);
+        // if is development environment set "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot"
+        // else set "/app/wwwroot"
+
+        var path = Path.Combine(Directory.GetCurrentDirectory(), "sample-data", fileName);
+        // var path = Path.Combine("/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot", "sample-data", fileName);
         // check if file exists
         if (!File.Exists(path))
         {
