@@ -21,6 +21,10 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-6TzNH2x0jxd9Gthopeie9W97B7PSf0LlweDXA4pnyHI=",
+      "url": "sample-data\/periodictable.json"
+    },
+    {
       "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
     },
@@ -57,7 +61,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-qcbzAB6Tu9eL9G4DJhBoJSXavxXm6eXFxoTYYglJDQs=",
+      "hash": "sha256-JYqNse00F6+iLn6k7Etcf60V\/hrHRQMTmkDd61RMt6k=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -125,7 +129,7 @@
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-yCwlLMISbv93GIKOOfb0nqxvaWi3gB\/pD0rV2W6cihI=",
+      "hash": "sha256-9i9jWa5q7jxnuGoDbk9esbY5J4iBh94NAzCa48RxIjQ=",
       "url": "_framework\/mudblazorapp.dll"
     },
     {
@@ -253,5 +257,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "MHIVnOOy"
+  "version": "0Ae\/vp23"
 };

@@ -21,6 +21,10 @@
       "url": "manifest.json"
     },
     {
+      "hash": "sha256-6TzNH2x0jxd9Gthopeie9W97B7PSf0LlweDXA4pnyHI=",
+      "url": "sample-data\/periodictable.json"
+    },
+    {
       "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
     },
@@ -837,5 +841,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "roxIPcS3"
+  "version": "57RSEtQC"
 };

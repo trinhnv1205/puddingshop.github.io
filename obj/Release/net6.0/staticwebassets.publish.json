@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OohWndXT0Nc/UQJ8URws5J/BRNYsY8oPxu+iYvaKDRI=",
+  "Hash": "Pyzy9k8AzCjwX5FpV+pyk7RsrvYwHLNSNVy7fKGhQZY=",
   "Source": "mudblazorapp",
   "BasePath": "/",
   "Mode": "Root",
@@ -2990,6 +2990,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/manifest.json"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/sample-data/periodictable.json",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "sample-data/periodictable.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/sample-data/periodictable.json"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/wwwroot/sample-data/weather.json",
