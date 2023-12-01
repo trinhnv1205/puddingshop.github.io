@@ -1,8 +1,1 @@
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/web.config
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/release/wwwroot/manifest.json
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/release/wwwroot/sample-data/weather.json
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/release/wwwroot/_framework/blazor.boot.json
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/wwwroot/manifest.json
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/wwwroot/sample-data/weather.json
-/Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/release/wwwroot/_framework/blazor.boot.json
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/release/web.config
