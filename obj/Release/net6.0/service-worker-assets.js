@@ -25,6 +25,10 @@
       "url": "sample-data\/periodictable.json"
     },
     {
+      "hash": "sha256-SXSZ59i7Lf5ELyq2dNKzoCoBYLi2eSPYjhR3fHQLpWU=",
+      "url": "sample-data\/users.json"
+    },
+    {
       "hash": "sha256-4Yh4OTT5TEAPNyXEzOG+n5l2HPK294WFItz4SIelj88=",
       "url": "sample-data\/weather.json"
     },
@@ -61,7 +65,7 @@
       "url": "_framework\/icudt.dat"
     },
     {
-      "hash": "sha256-JYqNse00F6+iLn6k7Etcf60V\/hrHRQMTmkDd61RMt6k=",
+      "hash": "sha256-dmfTLchtCidkPpU9PGbMIR5keo5z+e2U3VXwPyuMkvQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +97,7 @@
       "url": "_framework\/Microsoft.Extensions.Configuration.Json.dll"
     },
     {
-      "hash": "sha256-+CItoAvmSyexIwsCjw2pJx3sGwa9XNxtS3MgUoRBlgo=",
+      "hash": "sha256-SHeTyDQfL8Yxds\/OLAnkMYDFB35yZ334CX4VU3lNGFw=",
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
     },
     {
@@ -101,11 +105,11 @@
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.dll"
     },
     {
-      "hash": "sha256-iPH5oltTX97znNXLUkCBej2t5maW58RI5DAtv3u4VDQ=",
+      "hash": "sha256-lL3a1azIOL9K\/nAVOV5zBlYRR4aJmAVRLo8uAisEHew=",
       "url": "_framework\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-uvQcmI6XrSMo7BLb8B56Haq\/wjzfQPy1LJw48RmEmDs=",
+      "hash": "sha256-S+kZXdUNRvhG8iAGLIyQfyxW\/Me\/PGL1D16zEIdzKPY=",
       "url": "_framework\/Microsoft.Extensions.Logging.dll"
     },
     {
@@ -129,7 +133,7 @@
       "url": "_framework\/MudBlazor.dll"
     },
     {
-      "hash": "sha256-9i9jWa5q7jxnuGoDbk9esbY5J4iBh94NAzCa48RxIjQ=",
+      "hash": "sha256-V6ilD6XmvYhRhXypQncV9eJfdpCS5C05U45XN5UKtVg=",
       "url": "_framework\/mudblazorapp.dll"
     },
     {
@@ -205,7 +209,7 @@
       "url": "_framework\/System.ObjectModel.dll"
     },
     {
-      "hash": "sha256-Km\/NRBLW9\/l39V98V2f7OYv+tt8hWTansmxKpTLg4\/Y=",
+      "hash": "sha256-2skhweSKA3rs9NKpzlAMCNYywq53q+beClxfKc+LRj0=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
@@ -221,7 +225,7 @@
       "url": "_framework\/System.Runtime.CompilerServices.Unsafe.dll"
     },
     {
-      "hash": "sha256-M8Xur0mYu9sW3Y0nK3pIgKnYxIUt\/\/wzhB14ECeJQXU=",
+      "hash": "sha256-XnKsERAPzmy+wT\/DbDD33lrhOx7HMBImU5P13SqQ\/jw=",
       "url": "_framework\/System.Runtime.dll"
     },
     {
@@ -257,5 +261,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "0Ae\/vp23"
+  "version": "Orgpbb5m"
 };

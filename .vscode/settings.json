@@ -6,8 +6,8 @@
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/bin": true,
-        "**/obj": true,
+        // "**/bin": true,
+        // "**/obj": true,
         "**/release": true,
         "**/.idea": true,
     }

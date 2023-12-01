@@ -1,0 +1,41 @@
+@page "/users"
+@using Services
+@using Models
+@inject IUserService UserService
+
+<h1>Users</h1>
+
+@if (users.Count == 0)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <MudTable Items="users">
+        <HeaderContent>
+            <MudTh>Id</MudTh>
+            <MudTh>Username</MudTh>
+            <MudTh>Name</MudTh>
+            <MudTh>Password</MudTh>
+            <MudTh>Email</MudTh>
+            <MudTh>Role</MudTh>
+        </HeaderContent>
+        <RowTemplate>
+            <MudTd DataLabel="Id">@context.Id</MudTd>
+            <MudTd DataLabel="Username">@context.Username</MudTd>
+            <MudTd DataLabel="First Name">@context.Name</MudTd>
+            <MudTd DataLabel="Last Name">@context.Password</MudTd>
+            <MudTd DataLabel="Email">@context.Email</MudTd>
+            <MudTd DataLabel="Role">@context.Role</MudTd>
+        </RowTemplate>
+    </MudTable>
+}
+
+@code {
+    private List<User> users = new List<User>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await UserService.GetAll();
+    }
+}
