@@ -27,11 +27,10 @@ public class UserService : IUserService
         throw new NotImplementedException();
     }
 
-    public async Task<List<User>> GetAll()
+    public async Task<User[]> GetAll()
     {
-        await _helperService.LoadDataFromJsonFile<User>("users.json");
-        _logger.LogInformation("GetAll() called");
-        return await Task.FromResult(new List<User>());
+        var result = await _helperService.LoadDataFromJsonFile<User>("users.json");
+        return await Task.FromResult(result);
     }
 
     public Task<User> GetById(int id)

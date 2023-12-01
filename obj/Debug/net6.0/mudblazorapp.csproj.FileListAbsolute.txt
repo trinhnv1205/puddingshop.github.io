@@ -828,3 +828,4 @@
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/refint/mudblazorapp.dll
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/mudblazorapp.pdb
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/ref/mudblazorapp.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/release/wwwroot/sample-data/users.json
