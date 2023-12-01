@@ -813,11 +813,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-cRC5hIr6YBHk04A5UcwLJIhrJODppkVFfNwpNxD3g7k=",
+      "hash": "sha256-yCwlLMISbv93GIKOOfb0nqxvaWi3gB\/pD0rV2W6cihI=",
       "url": "_framework\/mudblazorapp.dll"
     },
     {
-      "hash": "sha256-6R3iebXnW8gY5adQz0fHl6dYoWqLiVxM3VM2pEV2scg=",
+      "hash": "sha256-x1sQWcvdsxxGwEtqtpWFte+bqQc9s3iDYm6KDsbIQG4=",
       "url": "_framework\/mudblazorapp.pdb"
     },
     {
@@ -825,7 +825,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-PA74\/qUmnOUbR3uzKvTY7Txk\/eIY\/mrbadMiDEkA9UI=",
+      "hash": "sha256-rEbKeLXENy1bZodZuv4tGTnF6kXl5B1nih5FYKUhfzc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -837,5 +837,5 @@
       "url": "_content\/MudBlazor\/MudBlazor.min.js"
     }
   ],
-  "version": "EnAdRN\/\/"
+  "version": "roxIPcS3"
 };
