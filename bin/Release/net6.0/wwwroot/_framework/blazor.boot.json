@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "System.Net.Http.Formatting.dll": "sha256-7zKFggP3JjqldnuuTpRWf6Gzze3iFLqHYDAJwcF7Jk8=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-1MwhDUDzh+JE9dgZxlgMF470nBqLsvGAAgAGfn3n8CI=",
       "Microsoft.AspNetCore.Components.dll": "sha256-R\/v7gKZiW9HyCdGNOk1GuOzLMyYC4OwMfwPH5+06KG4=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-Li4PRXFdOgU4EG7r\/STdKG8U2FJlMrY\/bxQhQsGwICw=",
@@ -30,6 +31,8 @@
       "Microsoft.JSInterop.dll": "sha256-tRzkW7Ekx3RsrBe894cfFYg4obJQxUjxuFkMwxh+EmA=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-x6oiDUwhHmg2BfCJ43UGTPi2SSASRtEyFgka5LU8eRM=",
       "MudBlazor.dll": "sha256-NMICktneuEAwnpIMXYRLyze23\/W40SaFOSVhLrvfjng=",
+      "Newtonsoft.Json.dll": "sha256-etsgJYQb32kqVnEuCK\/nXhcwxx1keKj+1XWs1DJRpmI=",
+      "Newtonsoft.Json.Bson.dll": "sha256-tgbl3XemJCyh8d9xfrU9lQWuVpBDMLl1wI1PLb6MMxk=",
       "System.IO.Pipelines.dll": "sha256-OXr1SqT\/FRQmnxVa6n811yUyJraU4tzQs5skNCiDmiM=",
       "Microsoft.CSharp.dll": "sha256-AbDB3xoT3KVWhDyogoZiFdRbRk92KtmWnECUk\/6K6QI=",
       "Microsoft.VisualBasic.Core.dll": "sha256-GpHake9dRTeu5tywuWSDKBDD3JaBjv7OH1AFlDB9xdg=",
@@ -197,13 +200,13 @@
       "mscorlib.dll": "sha256-C3gpWQMELcHYfrHU\/1agQUvWTtSNs9Ul2suMxcKFnIc=",
       "netstandard.dll": "sha256-CgGkoZQx73t3qchcsu85kgBcgrjNEOiudArOwKNb18k=",
       "System.Private.CoreLib.dll": "sha256-6nUSjiT7okMlkN897OnDypwppYuK7JxTahOClXkAuwE=",
-      "mudblazorapp.dll": "sha256-LaLXT6p\/xKGDUek98WAVKQLxLpqdT0BdndVsRA\/d2aY="
+      "mudblazorapp.dll": "sha256-ILJY4TisIFQ7VfjpuV7ux+02OegUdlXz7Lplnuqepuw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "mudblazorapp.pdb": "sha256-xR3aI2rPbfcoPo+XwBpQwrrd9nWIxwRsVMdRonOCKXo="
+      "mudblazorapp.pdb": "sha256-azBlM5t\/OWaJeV8PIyeUmemqtzPL4Gmp\/GbJpfocJFQ="
     },
     "runtime": {
       "dotnet.6.0.16.yecg89qb1a.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",

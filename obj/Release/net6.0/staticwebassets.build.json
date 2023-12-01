@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mBtNO+ijs3heal11K2wPF2F/9gL2tKK09/JHKIATZcM=",
+  "Hash": "U3dyQUdrG/GAAbN8tnTaiyz0GH8K8RfcTaHNyAgbE6A=",
   "Source": "mudblazorapp",
   "BasePath": "/",
   "Mode": "Root",
@@ -746,6 +746,40 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/trinhnv/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.16/runtimes/browser-wasm/lib/net6.0/netstandard.dll"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.Bson.dll",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.Bson.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/.nuget/packages/newtonsoft.json.bson/1.0.1/lib/netstandard1.3/Newtonsoft.Json.Bson.dll"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.dll",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/.nuget/packages/newtonsoft.json/10.0.1/lib/netstandard1.3/Newtonsoft.Json.dll"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.AppContext.dll",
@@ -1766,6 +1800,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/trinhnv/.nuget/packages/microsoft.netcore.app.runtime.mono.browser-wasm/6.0.16/runtimes/browser-wasm/lib/net6.0/System.Net.Http.dll"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Net.Http.Formatting.dll",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Net.Http.Formatting.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/.nuget/packages/microsoft.aspnet.webapi.client/5.2.7/lib/netstandard2.0/System.Net.Http.Formatting.dll"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Net.Http.Json.dll",
@@ -4879,6 +4930,23 @@
       "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Net.Http.Json.dll"
     },
     {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/gbqdAw9x.gz",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.dll"
+    },
+    {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/gByRqnMe.gz",
       "SourceId": "mudblazorapp",
       "SourceType": "Computed",
@@ -6545,6 +6613,23 @@
       "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Diagnostics.DiagnosticSource.dll"
     },
     {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/xGuJv4+o.gz",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.Bson.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.Bson.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/Newtonsoft.Json.Bson.dll"
+    },
+    {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/xM3FFsVB.gz",
       "SourceId": "mudblazorapp",
       "SourceType": "Computed",
@@ -6628,6 +6713,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.dll"
+    },
+    {
+      "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/xUUGcbE1.gz",
+      "SourceId": "mudblazorapp",
+      "SourceType": "Computed",
+      "ContentRoot": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.Net.Http.Formatting.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Net.Http.Formatting.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Release/net6.0/wwwroot/_framework/System.Net.Http.Formatting.dll"
     },
     {
       "Identity": "/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Release/net6.0/build-gz/xY6KY0K4.gz",
