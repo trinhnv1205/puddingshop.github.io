@@ -19,10 +19,4 @@
 		<ServiceWorker Include="wwwroot\service-worker.js" PublishedContent="wwwroot\service-worker.published.js" />
 	</ItemGroup>
 	
-	<ItemGroup>
-	  <Reference Include="System.Net.Http.Formatting">
-	    <HintPath>bin\Debug\net6.0\System.Net.Http.Formatting.dll</HintPath>
-	  </Reference>
-	</ItemGroup>
-
 </Project>
