@@ -841,3 +841,14 @@
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/build-gz/xUUGcbE1.gz
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/build-gz/gbqdAw9x.gz
 /Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/build-gz/xGuJv4+o.gz
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Authorization.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll.gz
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/wwwroot/_framework/Microsoft.AspNetCore.Components.Authorization.dll.gz
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/Microsoft.AspNetCore.Components.Authorization.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/build-gz/ZRkk+Yhu.gz
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/obj/Debug/net6.0/build-gz/zJb4E8GE.gz
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/appsettings.json
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/backend/package-lock.json
+/Users/trinhnv/RiderProjects/trinhnv1205.github.io/bin/Debug/net6.0/backend/package.json

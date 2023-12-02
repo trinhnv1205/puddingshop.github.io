@@ -9,6 +9,7 @@
         "**/bin": true,
         "**/obj": true,
         "**/release": true,
+        "**/package-lock.json": true,
         "**/.idea": true,
     }
 }
