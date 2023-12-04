@@ -15,10 +15,14 @@ jobs:
     # add .nojekyll file to tell GitHub pages to not treat this as a Jekyll project. (Allow files and folders starting with an underscore)
     - name: Add .nojekyll file
       run: touch frontend/release/wwwroot/.nojekyll
+    
+    # copy frontend/release/wwwroot to /release/wwwroot
+    - name: Copy wwwroot to release/wwwroot
+      run: cp -r frontend/release/wwwroot release/wwwroot
       
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
-        FOLDER: frontend/release/wwwroot
+        FOLDER: release/wwwroot
