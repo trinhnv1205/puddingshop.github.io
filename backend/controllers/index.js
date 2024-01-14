@@ -8,31 +8,31 @@ const user = require('./user');
 const book = require('./book');
 const { log } = require('console');
 
-router.get('/', (req, res) => {
-    const result = {
-        status: 200,
-        message: 'Express API server is healthy',
-        "routes": [
-            {
-                "name": "home",
-                "url": "/api/home"
-            },
-            {
-                "name": "about",
-                "url": "/api/about"
-            },
-            {
-                "name": "user",
-                "url": "/api/user"
-            },
-            {
-                "name": "book",
-                "url": "/api/book"
-            }
-        ]
-    };
-    res.json(result);
-});
+// router.get('/', (req, res) => {
+//     const result = {
+//         status: 200,
+//         message: 'Express API server is healthy',
+//         "routes": [
+//             {
+//                 "name": "home",
+//                 "url": "/api/home"
+//             },
+//             {
+//                 "name": "about",
+//                 "url": "/api/about"
+//             },
+//             {
+//                 "name": "user",
+//                 "url": "/api/user"
+//             },
+//             {
+//                 "name": "book",
+//                 "url": "/api/book"
+//             }
+//         ]
+//     };
+//     res.json(result);
+// });
 
 router.use('/api', home);
 router.use('/api', about);
