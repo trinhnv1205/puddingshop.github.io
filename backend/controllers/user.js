@@ -1,20 +1,33 @@
 const express = require('express');
 
 const router = express.Router();
+const UserService = require('../services/user');
 
 router.get('/user', (req, res) => {
-    res.send('User Page');
-    }
+    UserService.getUsers().then((users) => {
+        res.json(users);
+    }).catch((err) => {
+        res.status(500).json({ error: err });
+    });
+}
 );
 
 router.get('/user/:id', (req, res) => {
-    res.send(`User Page with id ${req.params.id}`);
-    }
+    UserService.getUserById(req.params.id).then((user) => {
+        res.json(user);
+    }).catch((err) => {
+        res.status(500).json({ error: err });
+    });
+}
 );
 
 router.post('/user', (req, res) => {
-    res.send('User Page');
-    }
+    UserService.addUser(req.body).then(() => {
+        res.json({ success: true });
+    }).catch((err) => {
+        res.status(500).json({ error: err });
+    });
+}
 );
 
 

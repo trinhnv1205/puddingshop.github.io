@@ -12,4 +12,12 @@ router.get('/book/getall', (req, res) => {
 }
 );
 
+router.get('/book/get/:id', (req, res) => {
+    BookService.getBookById(req.params.id).then((book) => {
+        res.json(book);
+    }).catch((err) => {
+        res.status(500).json({ error: err });
+    });
+});
+
 module.exports = router;

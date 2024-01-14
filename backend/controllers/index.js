@@ -6,6 +6,7 @@ const home = require('./home');
 const about = require('./about');
 const user = require('./user');
 const book = require('./book');
+const { log } = require('console');
 
 router.get('/', (req, res) => {
     const result = {

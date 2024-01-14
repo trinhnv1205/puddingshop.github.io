@@ -1,27 +1,30 @@
 const { EntitySchema } = require('typeorm');
 
 module.exports = new EntitySchema({
-    name: 'Book',
+    name: 'User',
     columns: {
         id: {
             primary: true,
             type: 'int',
             generated: true
         },
-        title: {
+        username: {
             type: 'text'
         },
-        author: {
+        password: {
             type: 'text'
         },
-        description: {
+        email: {
             type: 'text'
         },
-        price: {
-            type: 'double'
+        address: {
+            type: 'text'
         },
-        quantity: {
-            type: 'int'
+        phone: {
+            type: 'text'
+        },
+        role: {
+            type: 'text'
         },
         image: {
             type: 'text'

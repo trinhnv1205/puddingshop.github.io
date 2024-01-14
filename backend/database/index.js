@@ -1,16 +1,24 @@
-const sqlite3 = require('sqlite3').verbose()
-const db = new sqlite3.Database('./database/books.db')
+// const chalk = require('chalk');
+// const {createConnection, getConnection} = require('typeorm');
+// const Book = require('../models/book');
+// const User = require('../models/user');
 
-db.serialize(() => {
-    db.run(`CREATE TABLE IF NOT EXISTS books (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        title TEXT,
-        author TEXT,
-        description TEXT,
-        price REAL,
-        quantity INTEGER,
-        image TEXT
-    )`)
-})
+// createConnection({
+//     type: 'sqlite',
+//     cache: true,
+//     migrationsRun: true,
+//     // make books.db file in backend/database directory
+//     database: './database/sqlite.db',
+//     entities: [
+//         Book,
+//         User
+//     ],
+//     synchronize: true,
+//     logging: false,
+// }).then(connection => {
+//     console.log(chalk.green('Database connection established successfully 🎉'));
+// }).catch(error => console.log(error));
 
-module.exports = db
+// const db = getConnection("default");
+
+// module.exports = db;
