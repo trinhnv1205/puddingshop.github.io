@@ -5,18 +5,4 @@
 
 @code{
     [Parameter] public string? Action { get; set; }
-
-    protected override void OnInitialized()
-    {
-        switch (Action)
-        {
-            case "login":
-                Navigation.NavigateToLogin("authentication/login");
-                break;
-            case "logout":
-                Navigation.NavigateToLogout("authentication/logout");
-                break;
-        }
-    }
-
 }

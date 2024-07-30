@@ -3,22 +3,13 @@
 
 <AuthorizeView>
     <Authorized>
-        Hello, @context.User.Identity?.Name!
-        <FluentButton Appearance="Appearance.Accent" @onclick="BeginLogOut">Log out</FluentButton>
+        <div>@context.User.Identity?.Name</div>
     </Authorized>
     <NotAuthorized>
-        <a href="authentication/login">Log in</a>
+        <a href="authentication/login" style="color: white;text-decoration: none;">Log in</a>
     </NotAuthorized>
 </AuthorizeView>
 
-@code{
-    public void BeginLogOut()
-    {
-        Navigation.NavigateToLogout("authentication/logout");
-    }
-    
-    public void BeginLogIn()
-    {
-        Navigation.NavigateToLogin("authentication/login");
-    }
+@code {
+    private AuthenticationState context;
 }
