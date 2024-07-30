@@ -1,0 +1,15 @@
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Navigation
+
+<AuthorizeView>
+    <Authorized>
+        <div>@context.User.Identity?.Name</div>
+    </Authorized>
+    <NotAuthorized>
+        <a href="authentication/login" style="color: white;text-decoration: none;">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private AuthenticationState context;
+}
