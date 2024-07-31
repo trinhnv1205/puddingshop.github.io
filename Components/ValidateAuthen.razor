@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager Navigation
+
+<AuthorizeView>
+    <Authorized>
+        <h3>You are authenticated!</h3>
+    </Authorized>
+    <NotAuthorized>
+        <h3>You are not authenticated. Please log in.</h3>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private AuthenticationState? _authState;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        
+        // If the user is not authenticated, redirect to the login page
+        if (!_authState.User.Identity.IsAuthenticated)
+        {
+            Navigation.NavigateTo("/login");
+        }
+    }
+}

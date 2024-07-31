@@ -1,0 +1,17 @@
+﻿@page "/logout"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Navigation
+
+<FluentButton OnClick="LogoutHandle"
+              Appearance="Appearance.Accent"
+              IconStart="@(new Icons.Regular.Size20.SignOut())">
+    Logout
+</FluentButton>
+
+@code {
+    private void LogoutHandle()
+    {
+        Navigation.NavigateToLogout("authentication/logout");
+    }
+
+}

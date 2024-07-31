@@ -1,0 +1,16 @@
+﻿@page "/login"
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject NavigationManager Navigation
+
+<AuthorizeView>
+    <NotAuthorized>
+        <FluentButton Appearance="Appearance.Accent" @onclick="LoginWithGoogle" IconStart="@(new Icons.Regular.Size20.ArrowRight())">log in</FluentButton>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private void LoginWithGoogle()
+    {
+        Navigation.NavigateToLogin("authentication/login");
+    }
+}
