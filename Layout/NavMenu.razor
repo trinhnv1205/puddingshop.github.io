@@ -1,13 +1,36 @@
 ﻿<div class="navmenu">
-    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon" />
-    <label for="navmenu-toggle" class="navmenu-icon"><FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill" /></label>
+    <input type="checkbox" title="Menu expand/collapse toggle" id="navmenu-toggle" class="navmenu-icon"/>
+    <label for="navmenu-toggle" class="navmenu-icon">
+        <FluentIcon Value="@(new Icons.Regular.Size20.Navigation())" Color="Color.Fill"/>
+    </label>
     <nav class="sitenav" aria-labelledby="main-menu">
         <FluentNavMenu Id="main-menu" Width="250" Collapsible="true" Title="Navigation menu" @bind-Expanded="expanded" CustomToggle="true">
-             <FluentNavLink Href="/" Match="NavLinkMatch.All" Icon="@(new Icons.Regular.Size20.Home())" IconColor="Color.Accent">Home</FluentNavLink>
-             <FluentNavLink Href="privacy-policy" Icon="@(new Icons.Regular.Size20.TabInPrivate())" IconColor="Color.Accent">
-                 Privacy policy
-             </FluentNavLink>
-             <FluentNavLink Href="/add-blog-post" Icon="@(new Icons.Regular.Size20.Add())" IconColor="Color.Accent">Add Blog Post</FluentNavLink>
+            <FluentNavLink Href="/"
+                           Match="NavLinkMatch.All"
+                           Icon="@(new Icons.Regular.Size20.Home())"
+                           IconColor="Color.Accent">
+                Home
+            </FluentNavLink>
+            <FluentNavLink Href="privacy-policy"
+                           Icon="@(new Icons.Regular.Size20.TabInPrivate())"
+                           IconColor="Color.Accent">
+                Privacy policy
+            </FluentNavLink>
+            <FluentNavLink Href="/about-us"
+                           Icon="@(new Icons.Regular.Size20.Info())"
+                           IconColor="Color.Accent">
+                About Us
+            </FluentNavLink>
+            <FluentNavLink Href="/faq"
+                           Icon="@(new Icons.Regular.Size20.QuestionCircle())"
+                           IconColor="Color.Accent">
+                FAQ
+            </FluentNavLink>
+            <FluentNavLink Href="/terms-of-service"
+                           Icon="@(new Icons.Regular.Size20.Document())"
+                           IconColor="Color.Accent">
+                Terms of Service
+            </FluentNavLink>
         </FluentNavMenu>
     </nav>
 </div>
