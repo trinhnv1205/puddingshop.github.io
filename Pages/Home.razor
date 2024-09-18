@@ -2,10 +2,11 @@
 @inject HttpClient Http
 
 <PageTitle>Home</PageTitle>
-
 @code {
 
     protected override async Task OnInitializedAsync()
     {
+        // Delay 10s
+        await Task.Delay(10000);
     }
 }
