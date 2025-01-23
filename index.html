@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>trinhnv1205</title>
+    <base href="/"/>
+    <link href="_content/Microsoft.FluentUI.AspNetCore.Components/css/reboot.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/app.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    <link href="./trinhnv1205.styles.css" rel="stylesheet"/>
+
+    <!--    BEGIN SEO-->
+    <meta name="description" content="trinhnv1205"/>
+    <meta name="keywords" content="trinhnv1205"/>
+    <meta name="author" content="trinhnv1205"/>
+    <meta property="og:title" content="trinhnv1205"/>
+    <meta property="og:description" content="trinhnv1205"/>
+    <meta property="og:image" content="favicon.ico"/>
+    <meta property="og:url" content="https://trinhnv1205.github.io/"/>
+    <meta property="og:site_name" content="trinhnv1205"/>
+    <meta property="og:type" content="website"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="trinhnv1205"/>
+    <meta name="twitter:description" content="trinhnv1205"/>
+    <meta name="twitter:image" content="favicon.ico"/>
+    <meta name="twitter:site" content="@trinhnv1205"/>
+    <meta name="twitter:creator" content="@trinhnv1205"/>
+
+    <meta name="google-adsense-account" content="ca-pub-8133882009468409">
+    <meta name="google-site-verification" content="Kw3FB_nZN9XOOYsX6jsDDNCaskWYCuhodLiOvgbVIuI"/>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "trinhnv1205",
+            "url": "https://trinhnv1205.github.io/",
+            "sameAs": [
+                "https://www.facebook.com/trinhnv1205",
+                "https://www.linkedin.com/in/trinhnv1205"
+            ],
+            "jobTitle": "Software Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "trinhnv1205"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Hanoi",
+                "addressCountry": "Vietnam"
+            },
+            "email": "blackwitch145@gmail.com",
+            "telephone": "+84 332 123 000",
+            "birthDate": "1995-12-05"
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://trinhnv1205.github.io/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://trinhnv1205.github.io/?search={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://trinhnv1205.github.io/"
+                }
+            ]
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "trinhnv1205",
+            "url": "https://trinhnv1205.github.io/",
+            "logo": "favicon.ico",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+84 332 123 000",
+                "contactType": "Customer service"
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "url": "https://trinhnv1205.github.io/",
+            "name": "trinhnv1205",
+            "description": "trinhnv1205"
+        }
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8133882009468409"
+            crossorigin="anonymous"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-927JF1XS8H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-927JF1XS8H');
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8133882009468409"
+            crossorigin="anonymous"></script>
+
+    <!--    END SEO-->
+</head>
+
+<body>
+<div id="app">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+<script src="./_framework/blazor.webassembly.js" autostart="false"></script>
+<script src="decode.js"></script>
+<script>
+    Blazor.start({
+        loadBootResource: function (type, name, defaultUri, integrity) {
+            // For framework resources, use the precompressed .br files for faster downloads
+            // This is needed only because GitHub pages doesn't natively support Brotli (or even gzip for .dll files)
+            if (type !== 'dotnetjs' && location.hostname !== 'localhost') {
+                return (async function () {
+                    const response = await fetch(defaultUri + '.br', {cache: 'no-cache'});
+                    if (!response.ok) {
+                        throw new Error(response.statusText);
+                    }
+                    const originalResponseBuffer = await response.arrayBuffer();
+                    const originalResponseArray = new Int8Array(originalResponseBuffer);
+                    const decompressedResponseArray = BrotliDecode(originalResponseArray);
+                    const contentType = type === 'dotnetwasm' ? 'application/wasm' : 'application/octet-stream';
+                    return new Response(decompressedResponseArray, {headers: {'content-type': contentType}});
+                })();
+            }
+        }
+    });
+
+    // Hide the loading container once Blazor is fully loaded
+    Blazor.defaultReconnectionHandler._reconnectCallback = () => {
+        const loadingContainer = document.querySelector('.loading-container');
+        loadingContainer.classList.add('animate__fadeOut'); // Fade out animation
+        setTimeout(() => {
+            loadingContainer.style.display = 'none';
+        }, 500); // Adjust timing to match animation duration
+    };
+</script>
+</body>
+
+</html>
