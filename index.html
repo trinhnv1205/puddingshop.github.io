@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinh Nguyen - Developer Profile</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#2c3e50">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,8 @@
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1e293b">
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="app.js" as="script">
-    <base href="/trinhnv1205.github.io/">
+    <!-- Remove base tag for local development -->
+    <!-- <base href="/trinhnv1205.github.io/"> -->
     <meta name="github-repo" content="trinhnv1205/trinhnv1205.github.io">
 </head>
 <body>
@@ -35,7 +36,7 @@
     <main>
         <section id="about" class="section">
             <div class="profile-content">
-                <img src="zenitsu.jpg" alt="Zenitsu Profile Photo" class="profile-photo" 
+                <img src="./zenitsu.jpg" alt="Zenitsu Profile Photo" class="profile-photo" 
                      onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiB2aWV3Qm94PSIwIDAgMjAwIDIwMCI+PHJlY3Qgd2lkdGg9IjIwMCIgaGVpZ2h0PSIyMDAiIGZpbGw9IiNlMGUwZTAiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIyNiIgZmlsbD0iIzY2NiI+UHJvZmlsZSBJbWFnZTwvdGV4dD48L3N2Zz4='">
                 <div class="bio">
                     <h3>Software Developer</h3>
@@ -55,14 +56,14 @@
     <footer>
         <p>&copy; 2024 Trinh Nguyen. All rights reserved.</p>
     </footer>
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
     <script>
         window.addEventListener('load', () => {
             document.getElementById('loading').style.display = 'none';
         });
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./service-worker.js')
+                navigator.serviceWorker.register('service-worker.js')
                     .then(registration => {
                         console.log('ServiceWorker registration successful');
                     })
