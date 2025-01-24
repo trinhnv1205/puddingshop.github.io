@@ -1,8 +1,7 @@
 {
-  "name": "Trinh Nguyen Portfolio",
-  "short_name": "TN Portfolio",
+  "name": "TRINHNV Portfolio",
+  "short_name": "TRINHNV Portfolio",
   "start_url": "index.html",
-  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",

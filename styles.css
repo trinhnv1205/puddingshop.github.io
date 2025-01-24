@@ -9,6 +9,10 @@
     --spacing: clamp(1rem, 5vw, 3rem);
     --container-width: min(1200px, 90%);
     --font-primary: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+    --header-bg-light: rgba(255, 255, 255, 0.8);
+    --header-bg-dark: rgba(0, 0, 0, 0.8);
+    --nav-text-light: #000000;
+    --nav-text-dark: #ffffff;
 }
 
 body {
@@ -22,7 +26,7 @@ body {
 
 /* Refined Navigation */
 nav {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--header-bg-light);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     position: fixed;
@@ -43,7 +47,8 @@ nav {
 .nav-container h1 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--nav-text-light);
+    transition: color 0.3s ease;
 }
 
 nav ul {
@@ -55,12 +60,12 @@ nav ul {
 }
 
 nav a {
-    color: var(--text-primary);
+    color: var(--nav-text-light);
     text-decoration: none;
     font-size: 0.8rem;
     letter-spacing: 0;
     opacity: 0.8;
-    transition: opacity 0.3s ease;
+    transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 nav a:hover {
@@ -240,7 +245,15 @@ footer {
     }
 
     nav {
-        background: rgba(0, 0, 0, 0.8);
+        background: var(--header-bg-dark);
+    }
+
+    .nav-container h1 {
+        color: var(--nav-text-dark);
+    }
+
+    nav a {
+        color: var(--nav-text-dark);
     }
 
     .privacy-card {
@@ -343,7 +356,7 @@ footer {
 .privacy-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    color: var (--text-primary);
 }
 
 .privacy-card p {
