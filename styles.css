@@ -180,6 +180,56 @@ footer {
     border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+/* Enhanced Footer Styles */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 980px;
+    transition: all 0.3s ease;
+    background: var(--card-bg);
+}
+
+.footer-links a:hover {
+    transform: translateY(-2px);
+    color: var(--accent-color);
+    background: var(--card-bg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.footer-links .separator {
+    color: var(--text-secondary);
+    opacity: 0.3;
+}
+
+.footer-links svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.footer-links a:hover svg {
+    transform: scale(1.1);
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
@@ -191,6 +241,20 @@ footer {
 
     nav {
         background: rgba(0, 0, 0, 0.8);
+    }
+
+    .privacy-card {
+        background: var(--card-bg);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .footer-links a {
+        background: rgba(255,255,255,0.05);
+    }
+    
+    .footer-links a:hover {
+        background: rgba(255,255,255,0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
 }
 
@@ -211,4 +275,101 @@ footer {
     .extension-card {
         margin: 0 var(--spacing);
     }
+
+    .privacy-section {
+        margin-top: 6rem;
+    }
+
+    .privacy-content {
+        grid-template-columns: 1fr;
+    }
+
+    .privacy-card {
+        padding: 1.5rem;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .footer-links a {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Privacy Page Styles */
+.privacy-section {
+    max-width: 1000px;
+    margin: 8rem auto 4rem;
+}
+
+.privacy-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.privacy-subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.privacy-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 var(--spacing);
+}
+
+.privacy-card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 18px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.privacy-card:hover {
+    transform: translateY(-5px);
+}
+
+.privacy-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.privacy-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.privacy-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.privacy-contact {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 3rem;
+    background: var(--card-bg);
+    border-radius: 18px;
+}
+
+.contact-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
 }
