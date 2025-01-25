@@ -13,21 +13,21 @@ const extensions = [
   {
     name: "Tiktok video downloader ultimate",
     description: "Download Tiktik videos with one click.",
-    url: "https://chromewebstore.google.com/detail/tiktok-video-downloader/mmcaapmklpamicmpkobbnffbhedmcnhk",
+    url: "https://chrome.google.com/webstore/detail/your-extension-1",
     // Base64 encoded icon
     icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiMzNDk4ZGIiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiPkV4dDwvdGV4dD48L3N2Zz4=",
   },
   {
     name: "TikTok Background Runner",
     description: "Run TikTok in the background.",
-    url: "https://chromewebstore.google.com/detail/tiktok-background-runner/lpnlnagpbhkicopaodjkccephknekklh",
+    url: "https://chrome.google.com/webstore/detail/your-extension-1",
     // Base64 encoded icon
     icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiMzNDk4ZGIiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiPkV4dDwvdGV4dD48L3N2Zz4=",
   },
   {
     name: "Summarize AI: Quick Article Summarizer",
     description: "Summarize any article or text with one click.",
-    url: "https://chromewebstore.google.com/detail/summarize-ai-quick-articl/ajkhkehelbjkbgdljodkphigpeggmnna",
+    url: "https://chrome.google.com/webstore/detail/your-extension-1",
     // Base64 encoded icon
     icon: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIGZpbGw9IiMzNDk4ZGIiLz48dGV4dCB4PSI1MCUiIHk9IjUwJSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Im1vbm9zcGFjZSIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiPkV4dDwvdGV4dD48L3N2Zz4=",
   }
