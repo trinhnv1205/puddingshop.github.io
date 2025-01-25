@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /privacy.html
+Allow: /assets/
+
+Sitemap: https://trinhnv1205.github.io/sitemap.xml

@@ -72,6 +72,7 @@ const App = {
     init() {
         this.initExtensions();
         this.initObserver();
+        this.smoothScroll();
         this.bindEvents();
     },
 
@@ -91,21 +92,62 @@ const App = {
     initObserver() {
         const observerOptions = {
             root: null,
-            rootMargin: CONFIG.observerMargin,
-            threshold: CONFIG.observerThreshold,
+            rootMargin: '50px',
+            threshold: 0.15
         };
 
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
+            entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("visible");
-                    observer.unobserve(entry.target);
+                    entry.target.classList.add('visible');
+                    // Add stagger effect for child elements
+                    const children = entry.target.querySelectorAll('.animate-child');
+                    children.forEach((child, index) => {
+                        setTimeout(() => {
+                            child.classList.add('visible');
+                        }, index * 100);
+                    });
                 }
             });
         }, observerOptions);
 
-        const lazyElements = document.querySelectorAll(".lazy-load");
-        lazyElements.forEach((element) => observer.observe(element));
+        // Observe all animate elements
+        document.querySelectorAll('.extension-card, .section').forEach(el => {
+            observer.observe(el);
+        });
+    },
+
+    createExtensionCard(extension, index) {
+        const card = document.createElement('div');
+        card.className = 'extension-card';
+        card.innerHTML = `
+            <img class="extension-icon animate-child" src="${extension.icon}" alt="${extension.name}" loading="lazy">
+            <h3 class="animate-child">${extension.name}</h3>
+            <p class="animate-child">${extension.description}</p>
+            <a href="${extension.url}" class="btn-primary animate-child" target="_blank" rel="noopener">
+                View in Store
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M3.5 9L8.5 4M8.5 4H4M8.5 4V8.5" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+            </a>
+        `;
+        return card;
+    },
+
+    // Smooth scroll implementation
+    smoothScroll() {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     },
 
     bindEvents() {
@@ -123,12 +165,11 @@ const App = {
         if (profileImg) {
             profileImg.onerror = function () {
                 this.src = defaultProfileImage;
-                console.log("Failed to load zenitsu.jpg, using default image");
+                console.log("Failed to load profile image, using default image");
             };
 
-            // Set initial image
             if (!profileImg.src || profileImg.src === window.location.href) {
-                profileImg.src = "zenitsu.jpg";
+                profileImg.src = "./assets/zenitsu.jpg";
             }
         }
     },
