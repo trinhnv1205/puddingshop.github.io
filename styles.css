@@ -400,6 +400,35 @@ footer {
 .privacy-contact {
     grid-column: 1 / -1;
     text-align: center;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: var(--card-bg);
+    border-radius: 18px;
+    max-width: 600px;  /* Thêm max-width */
+    width: 90%;        /* Thêm width */
+}
+
+.privacy-contact h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.privacy-contact p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.privacy-contact .contact-link {
+    margin: 0 auto;    /* Căn giữa button */
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.privacy-contact {
+    grid-column: 1 / -1;
+    text-align: center;
     margin-top: 3rem;
     padding: 3rem;
     background: var(--card-bg);
