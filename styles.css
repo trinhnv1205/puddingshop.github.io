@@ -7,12 +7,16 @@
     --text-primary: #1d1d1f;
     --text-secondary: #86868b;
     --spacing: clamp(1rem, 5vw, 3rem);
-    --container-width: min(1200px, 90%);
+    --container-width: min(1400px, 95%);
     --font-primary: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
     --header-bg-light: rgba(255, 255, 255, 0.8);
     --header-bg-dark: rgba(0, 0, 0, 0.8);
     --nav-text-light: #000000;
     --nav-text-dark: #ffffff;
+    --grid-columns-mobile: 1;
+    --grid-columns-tablet: 2;
+    --grid-columns-desktop: 3;
+    --grid-columns-ultrawide: 4;
 }
 
 body {
@@ -125,10 +129,11 @@ nav a:hover {
 /* Extensions Grid */
 .extensions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(var(--grid-columns-mobile), 1fr);
+    gap: clamp(1rem, 2vw, 2rem);
     max-width: var(--container-width);
     margin: 3rem auto;
+    padding: 0 var(--spacing);
 }
 
 .extension-card {
@@ -559,5 +564,260 @@ html {
 @keyframes spin {
     to {
         transform: rotate(360deg);
+    }
+}
+
+/* Mobile First Breakpoints */
+/* Small devices (phones, 320px and up) */
+@media (min-width: 320px) {
+    .nav-container {
+        padding: 0.8rem var(--spacing);
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .bio h3 {
+        font-size: 2rem;
+    }
+
+    .bio p {
+        font-size: 1.1rem;
+    }
+
+    .extension-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    :root {
+        --grid-columns-mobile: var(--grid-columns-tablet);
+    }
+
+    .nav-container {
+        padding: 1rem var(--spacing);
+    }
+
+    nav ul {
+        gap: 2rem;
+    }
+
+    .profile-photo {
+        width: 160px;
+        height: 160px;
+    }
+
+    .bio h3 {
+        font-size: 2.5rem;
+    }
+
+    .bio p {
+        font-size: 1.3rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    :root {
+        --grid-columns-mobile: var(--grid-columns-desktop);
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .bio h3 {
+        font-size: 3rem;
+    }
+
+    .bio p {
+        font-size: 1.5rem;
+    }
+
+    .extension-card {
+        padding: 2rem;
+    }
+}
+
+/* Extra large devices (ultrawide monitors, 1400px and up) */
+@media (min-width: 1400px) {
+    :root {
+        --grid-columns-mobile: var(--grid-columns-ultrawide);
+    }
+
+    .container {
+        max-width: 1400px;
+    }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) {
+    .extension-card:hover,
+    .privacy-card:hover,
+    .contact-link:hover {
+        transform: none;
+    }
+
+    .btn-primary:active,
+    .contact-link:active {
+        transform: scale(0.98);
+    }
+}
+
+/* Landscape Mode Fixes */
+@media (max-height: 500px) and (orientation: landscape) {
+    .section {
+        margin-top: 3rem;
+        padding: 1rem var(--spacing);
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-content {
+        gap: 1rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .nav-container,
+    .footer-content {
+        display: none;
+    }
+
+    .section {
+        margin: 1rem 0;
+        padding: 0;
+    }
+
+    .extension-card {
+        break-inside: avoid;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* Mobile Navigation Fixes */
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .nav-container h1 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 0.7rem;
+        white-space: nowrap;
+    }
+}
+
+/* Extra Small Device Adjustments */
+@media (max-width: 320px) {
+    :root {
+        --spacing: 0.5rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .bio h3 {
+        font-size: 1.5rem;
+    }
+
+    .bio p {
+        font-size: 1rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-link {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .extension-card {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .extension-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .extension-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .extension-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        justify-content: center;
+        padding: 0.6rem 1rem;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-links a {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .separator {
+        display: none;
+    }
+}
+
+/* Fix container width for very small screens */
+@media (max-width: 360px) {
+    :root {
+        --container-width: 100%;
+    }
+
+    .extensions-grid {
+        padding: 0 0.5rem;
     }
 }
